@@ -18,7 +18,7 @@
 			font-family: "Avant Garde";
 		}
 
-		.col-sm-6 > h1 {
+		.col-sm-6>h1 {
 			margin-top: 200px;
 		}
 
@@ -40,7 +40,8 @@
 
 		.heart {
 			font-size: 150px;
-			color: #e00;
+			margin-top: -50px;
+			color: hotpink;
 			animation: beat .50s infinite alternate;
 			transform-origin: center;
 		}
@@ -48,33 +49,6 @@
 		/* Heart beat animation */
 		@keyframes beat {
 			to {
-				transform: scale(1.4);
-			}
-		}
-
-		.heart {
-			font-size: 150px;
-			color: hotpink;
-
-			-webkit-animation: beat .50s infinite alternate;
-			-moz-animation: beat .50s infinite alternate;
-			-ms-animation: beat .50s infinite alternate;
-			-o-animation: beat .50s infinite alternate;
-			animation: beat .50s infinite alternate;
-
-			-webkit-transform-origin: center;
-			-moz-transform-origin: center;
-			-o-transform-origin: center;
-			-ms-transform-origin: center;
-			transform-origin: center;
-		}
-
-		@keyframes "beat" {
-			to {
-				-webkit-transform: scale(1.4);
-				-moz-transform: scale(1.4);
-				-o-transform: scale(1.4);
-				-ms-transform: scale(1.4);
 				transform: scale(1.4);
 			}
 		}
