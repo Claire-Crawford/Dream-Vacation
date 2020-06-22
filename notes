@@ -92,7 +92,7 @@
 			<div class="slide">
 				<div class="row">
 					<div class="col-sm-6">
-						<h1 class="animate__animated">Exploring Rome!</h1>
+						<h1 class="d-none">Exploring Rome!</h1>
 						<p> We used bikes to explore the city!
 						</p>
 						<i class="fa fa-bicycle fa-3x" style='color:crimson'></i>
@@ -122,7 +122,7 @@
 			<div class="slide">
 				<div class="row">
 					<div class="col-sm-6">
-						<h1 class="animate__animated">Amazing Sites and Attractions!</h1>
+						<h1 class="d-none">Amazing Sites and Attractions!</h1>
 						<p> We couldn't get enough of the ancient ruins!
 						</p>
 						<i class="fa fa-binoculars fa-3x" style=color:floralwhite></i>
@@ -249,6 +249,19 @@
 				slidesNavigation: true,
 				afterLoad: function(origin, destination, direction) {
 					var loadedSection = this;
+
+					if (destination.index == 1) {
+						$("#section2 h1").removeClass("d-none").addClass("animate__animated animate__fadeInLeftBig");
+					}
+					
+					if (destination.index == 2) {
+						$("#section3 h1").addClass("animate__animated animate__fadeInLeftBig");
+					}
+
+					if (destination.index == 3) {
+						$("#section4 h1").addClass("animate__animated animate__fadeInLeftBig");
+					}
+					
 
 					if (destination.index == 1) {
 						$("#section2 .animate__animated").addClass(
