@@ -1,93 +1,306 @@
-<<html>
+<!DOCTYPE html>
+<html>
 
-	<head>
-		<link rel="stylesheet" href="assets/fullpage.min.css">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
-		<style>
-			body {
-				font-family: arial, helvetica;
-				color: #333;
-				color: rgba(0, 0, 0, 0.5);
+<head>
+	<link rel="stylesheet" href="assets/fullpage.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+	<style>
+		body {
+			font-family: arial, helvetica;
+			color: #333;
+			color: rgba(0, 0, 0, 0.5);
+		}
+
+		h1 {
+			font-family: "Avant Garde";
+		}
+		.section {
+			text-align: center;
+		}
+
+		i.fa fa-plane {
+			color: #FFC107;
+		}
+
+		img.img-fluid {
+			height: 550px;
+			width: 825px;
+		}
+
+		/* styling for beating heart*/
+
+
+		.heart {
+			font-size: 150px;
+			color: #e00;
+			animation: beat .50s infinite alternate;
+			transform-origin: center;
+		}
+
+		/* Heart beat animation */
+		@keyframes beat {
+			to {
+				transform: scale(1.4);
 			}
+		}
 
-			.section {
-				text-align: center;
+		.heart {
+			font-size: 150px;
+			color: hotpink;
+
+			-webkit-animation: beat .50s infinite alternate;
+			-moz-animation: beat .50s infinite alternate;
+			-ms-animation: beat .50s infinite alternate;
+			-o-animation: beat .50s infinite alternate;
+			animation: beat .50s infinite alternate;
+
+			-webkit-transform-origin: center;
+			-moz-transform-origin: center;
+			-o-transform-origin: center;
+			-ms-transform-origin: center;
+			transform-origin: center;
+		}
+
+		@keyframes "beat" {
+			to {
+				-webkit-transform: scale(1.4);
+				-moz-transform: scale(1.4);
+				-o-transform: scale(1.4);
+				-ms-transform: scale(1.4);
+				transform: scale(1.4);
 			}
+		}
+	</style>
+</head>
 
-			i.fa.fa-sun-o {
-				font-size: 72px;
-				color: #FFC107;
-			}
-		</style>
-	</head>
+<body>
+	<div id="myContainer">
 
-	<body>
-		<div id="myContainer">
-
-			<div class="section">
-			</div>
-			<div id="section 2" class="section">
-				<h1 class="animate__animated">Dream Vacation to Italy</h1><p>Leaving the airport. Destination: Rome!</p>
-			</div>
-
-			<div class="section"> 
-
-
-				
-			<div class="slide"> <h1> Section 3 </h1> </div>
-				<img class="img-fluid" src="images/airplane.jpg" alt="The Beach">
-			</div>
-			<div class="row">
-				<div class="col-sm-6">
-					<h1 class="animate__animated animate__fadeInLeftBig">Our Trip to the Beach</h1>
-					<p>Orange Beach, AL 2020</>
-					<i class="fa fa-sun-o"></i>
+		<div class="section">
+			<div class="slide">
+				<div class="row">
+					<div class="col-sm-6">
+						<h1 class="animate__animated animate__fadeInLeftBig">Our Dream Vacation</h1>
+						<p>Italy 2020</p>
+						<i class="fa fa-plane fa-3x" style='color:cornflowerblue'></i>
+					</div>
+					<div class="col-sm-6">
+						<img class="img-fluid" src="images/airplane.jpg" alt="Airplane">
+					</div>
 				</div>
+			</div>
 
-			</div>
 			<div class="slide">
-				<h1 class="animate__animated animate__fadeInLeftBig">Hitting the Road...</h1>
-				<p>12 hour trip, here we come!</p>
+				<h1>Our vacation begins!</h1>
+				<p> We leave the airport and head straight for the heart of Rome.
+				</p>
+				<img class="img-fluid" src="images/center_of_rome.jpg" alt="Trivi Fountain">
 			</div>
+
 			<div class="slide">
-				<h1>Slide 1.3</h1>
+				<h1>Unpacked!</h1>
+				<p> We are now ready to explore the city!
+				</p>
+				<img class="img-fluid" src="images/apartment.jpg" alt="apartment">
 			</div>
-			<div class="col-sm-6">
-				<img class="img-fluid" src="images/fountain in rome.jpg" alt="The Beach">
+
+		</div>
+
+		<div id="section2" class="section">
+			<div class="slide">
+				<div class="row">
+					<div class="col-sm-6">
+						<h1 class="animate__animated">Exploring Rome!</h1>
+						<p> We used bikes to explore the city!
+						</p>
+						<i class="fa fa-bicycle fa-3x" style='color:crimson'></i>
+					</div>
+					<div class="col-sm-6">
+						<img class="img-fluid" src="images/bike_rome_best.jpg" alt="Riding bikes in Rome">
+					</div>
+				</div>
+			</div>
+
+			<div class="slide">
+				<h1>Getting a feel for Rome!</h1>
+				<p> Bikes are such a great way to get around the city.
+				</p>
+				<img class="img-fluid" src="images/bikes_rome.png" alt="Riding bikes in Rome">
+			</div>
+
+			<div class="slide">
+				<h1>Already totally in love with Rome! </h1>
+				<p>We rode our bikes every day.</p>
+				<img class="img-fluid" src="images/rome_bikes_2.jpg" alt="Bike riders in front of Colosseum">
 			</div>
 		</div>
+
+
+		<div id="section3" class="section">
+			<div class="slide">
+				<div class="row">
+					<div class="col-sm-6">
+						<h1 class="animate__animated">Amazing Sites and Attractions!</h1>
+						<p> We couldn't get enough of the ancient ruins!
+						</p>
+						<i class="fa fa-binoculars fa-3x" style=color:floralwhite></i>
+					</div>
+					<div class="col-sm-6">
+						<img class="img-fluid" src="images/ruins.jpg" alt="Ancient Roman ruins">
+					</div>
+				</div>
+			</div>
+
+			<div class="slide">
+				<h1>So much beauty and history!</h1>
+				<p>We felt very connected to these beautiful ancient monuments.
+				</p>
+				<img class="img-fluid" src="images/rome_ruin_2.jpg" alt="Ancient Roman ruins">
+			</div>
+
+			<div class="slide">
+				<h1>The amazing Colosseum!</h1>
+				<p> We didn't want to leave this place!
+				</p>
+				<img class="img-fluid" src="images/rome_ruin_3.jpg" alt="Ancient Roman Ruins">
+			</div>
 		</div>
-		<id="section2" class="section">
-			<h1 class="d-none">Hitting the Road...</h1>
-			<p>12 hour trip, here we come!</p>
-			@@ -62,7 +56,7 @@ <h1>The water is great!</h1>
-			<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-				integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-				crossorigin="anonymous"></script>
-			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-				integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-				crossorigin="anonymous"></script>
-			<script src="assets/fullpage.min.js"></script>
-			<script type="text/javascript"> </script>
-			<script>
-				new fullpage('#myContainer', {
-					sectionsColor: ['#7D5BA6', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff', '#ccc'],
-					slidesNavigation: true,
-					afterLoad: function (origin, destination, direction) {
-						var loadedSection = this;
-						if (destination.index == 1) {
-							$("#section2 h1").removeClass("d-none").addClass(
-								"animate__animated animate__fadeInLeftBig");
-						}
-						if (destination.index == 2) {
-							$("#section3 h1").addClass("animate__animated animate__fadeInLeftBig");
-						}
+
+		<div id="section4" class="section">
+			<div class="slide">
+				<div class="row">
+					<div class="col-sm-6">
+						<h1 class="animate__animated"> Train ride to Florence!</h1>
+						<p> Exploring another beautiful city!
+						</p>
+						<i class="fa fa-train fa-3x" style='font-size:48px;color:burlywood'></i>
+					</div>
+					<div class="col-sm-6">
+						<img class="img-fluid" src="images/florence_city.jpg" alt="City of Florence Italy">
+					</div>
+
+					<div class="slide">
+						<h1>Fun train ride</h1>
+						<p> Such a comfortable way to travel and only 90 minutes to Florence.
+						</p>
+						<img class="img-fluid" src="images/train.jpg" alt="Train interior">
+					</div>
+
+					<div class="slide">
+						<h1>Such an amazing city!</h1>
+						<p> This city is a must-visit if you're an art lover. We stayed here for 3 days!
+						</p>
+						<img class="img-fluid" src="images/florence_city_2.jpg" alt="City of Florence Italy">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="section5" class="section">
+			<div class="slide">
+				<div class="row">
+					<div class="col-sm-6">
+						<h1 class="animate__animated">Amazing Cafes!</h1>
+						<p> The best food and coffee we've ever tasted!
+						</p>
+						<i class="fa fa-coffee fa-3x" style='color:yellow'></i>
+					</div>
+					<div class="col-sm-6">
+						<img class="img-fluid" src="images/rome_lunch_cafe.jpeg" alt="Cafe in Rome">
+					</div>
+				</div>
+			</div>
+
+			<div class="slide">
+				<h1>This was our favorite place for dinner.</h1>
+				<p> We visited this beautiful cafe 3 times!
+				</p>
+				<img class="img-fluid" src="images/dinner_cafe.jpg" alt="Cafe in  Rome">
+			</div>
+
+			<div class="slide">
+				<h1>Coffee!</h1>
+				<p>We enjoyed a cappuccino here each morning while in Rome. So delicious!
+				</p>
+				<img class="img-fluid" src="images/rome_coffee.jpg" alt="Rome Coffee Shop">
+			</div>
+		</div>
+
+		<div id="section6" class="section">
+			<div class="slide">
+				<div class="row">
+					<div class="col-sm-6">
+						<h1 class="animate__animated">Our last day!</h1>
+						<p> We can't believe it's over. Our heart belongs to Italy.
+						</p>
+						<div class="heart">&#x2665;
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<img class="img-fluid" src="images/spanish_steps_2.jpg" alt="Spanish Steps in Rome">
+					</div>
+				</div>
+			</div>
+
+			<div class="slide">
+				<h1>So sad to leave. </h1>
+				<img class="img-fluid" src="images/rome_beauty_cafe.jpg" alt="Rome">
+			</div>
+
+			<div class="slide">
+				<h1>We will return!</h1>
+				<img class="img-fluid" src="images/rome_parks.jpg" alt="Park in Rome">
+			</div>
+		</div>
+
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+		</script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+			integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+		</script>
+		<script src="assets/fullpage.min.js"></script>
+		<script type="text/javascript">
+			new fullpage('#myContainer', {
+				sectionsColor: ['#D5C3C3', '#CDB7B7', '#BC9F9F', '#AB8787', '#A37B7B', '#9B6F6F'],
+				slidesNavigation: true,
+				afterLoad: function (origin, destination, direction) {
+					var loadedSection = this;
+
+					console.log(origin.index);
+					console.log(destination.index);
+
+					if (destination.index == 1) {
+						$("#section2 .animate__animated").addClass(
+							"animate__fadeInLeftBig");
 					}
-				});
-			</script>
-	</body>
 
-	</html>
+					if (destination.index == 2) {
+						$("#section3 .animate__animated").addClass(
+							"animate__fadeInLeftBig");
+					}
+
+					if (destination.index == 3) {
+						$("#section4 .animate__animated").addClass(
+							"animate__fadeInLeftBig");
+					}
+
+					if (destination.index == 4) {
+						$("#section5 .animate__animated").addClass(
+							"animate__fadeInLeftBig");
+					}
+
+					if (destination.index == 5) {
+						$("#section6 .animate__animated").addClass(
+							"animate__fadeInLeftBig");
+					}
+				}
+			});
+		</script>
+</body>
+
+</html>
